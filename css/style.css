@@ -1,0 +1,269 @@
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  font-family: "Merriweather", "Arial", sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+.dark-body {
+  background-color: #282c35;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*! CONTAINER */
+.container {
+  width: 100%;
+  max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 63px;
+  padding-bottom: 33px;
+}
+
+.site-header__logo-link {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 40px;
+  color: #222;
+}
+.site-header__logo-link h1 {
+  margin: 0;
+  font-weight: 900;
+  font-family: "Montserrat";
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.dark-body .site-header__logo-link {
+  color: #fff;
+}
+
+.checbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 5px;
+  width: 50px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #222;
+  cursor: pointer;
+}
+
+.checbox_moon-img {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.checbox__btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 2px 3px #ffa7c4;
+  flex-shrink: 0;
+  transition: margin 0.2s ease-out;
+}
+
+.checbox-toggle .checbox__btn {
+  left: auto;
+  margin-left: 20px;
+}
+
+.checbox_sun-img {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.hero {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.hero__img {
+  width: 84px;
+  height: 84px;
+  margin-right: 20px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-shrink: 0;
+}
+
+.hero__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.hero__title-link {
+  display: inline-block;
+  color: #d23669;
+  text-decoration: underline;
+}
+.hero__title-link:hover {
+  text-decoration: none;
+}
+.hero__title-link:active {
+  opacity: 0.6;
+}
+
+.dark-body .hero__title-link {
+  color: #ffa7c4;
+}
+
+.portfolios {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.portfolios__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.portfolios__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.portfolios__item-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.portfolios__item-link {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 900;
+  color: #d23669;
+}
+
+.dark-body .portfolios__item-link {
+  color: #ffa7c4;
+}
+
+.portfolios__item-text {
+  margin: 0;
+}
+.portfolios__item-text a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #d23669;
+}
+
+.dark-body .portfolios__item-text a {
+  color: #ffa7c4;
+}
+
+.site-footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.site-footer__logo-link {
+  display: inline-block;
+  margin-right: 30px;
+  font-weight: 900;
+  font-family: Montserrat;
+  text-decoration: none;
+  color: #222;
+}
+.site-footer__logo-link h1 {
+  margin: 0;
+}
+
+.dark-body .site-footer__logo-link {
+  color: #fff;
+}
+
+.social__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.social__item {
+  display: flex;
+}
+.social__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.social__link {
+  display: inline-flex;
+}
+.social__link img {
+  max-width: 30px;
+  max-height: 30px;
+}
+.social__link:hover {
+  opacity: 0.8;
+}
+.social__link:active {
+  opacity: 0.6;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+.site-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 63px;
+  padding-bottom: 33px;
+}
+
+.site-header__logo-link {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 40px;
+  color: $dark-color;
+
+
+  h1 {
+    margin: 0;
+    font-weight: 900;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+
+.dark-body .site-header__logo-link {
+  color: $white-color;
+}

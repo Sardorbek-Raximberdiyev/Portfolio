@@ -1,0 +1,43 @@
+.checbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 5px;
+  width: 50px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: $dark-color;
+  cursor: pointer;
+}
+
+
+.checbox_moon-img {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.checbox__btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 2px 3px #ffa7c4;
+  flex-shrink: 0;
+  transition: margin 0.2s ease-out;
+}
+
+.checbox-toggle .checbox__btn {
+  left: auto;
+  margin-left: 20px;
+}
+
+.checbox_sun-img {
+  display: block;
+  width: 16px;
+  height: 16px;
+}

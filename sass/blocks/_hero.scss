@@ -1,0 +1,39 @@
+.hero {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.hero__img {
+  width: 84px;
+  height: 84px;
+  margin-right: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.hero__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.hero__title-link {
+  display: inline-block;
+  color: $dark-red-color;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.dark-body .hero__title-link {
+  color: $white-red-color;
+}
