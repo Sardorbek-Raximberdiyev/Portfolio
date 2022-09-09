@@ -2,30 +2,47 @@ const elChecbox = document.querySelector('.checbox');
 const elJsChecbox = document.querySelector('.js-checbox');
 const elBodyOpen = document.querySelector('.white-body');
 
+
 if (elChecbox) {
   elChecbox.addEventListener('click', function () {
     elJsChecbox.classList.toggle('checbox-toggle');
-    elBodyOpen.classList.toggle('dark-body');
-
   })
 }
-// document.addEventListener("DOMContentLoaded", function () {
-//   const theme = localStorage.getItem("theme", "dark");
-//   const darkModeToggle = document.getElementById("chk");
 
-//   if (theme === "dark") {
-//     document.documentElement.classList.add("dark-mode");
-//   } else {
-//     document.documentElement.classList.remove("dark-mode");
-//   }
+const elModalButton = document.querySelector('.js-close-button');
+const elModal = document.querySelector('.modal');
 
-//   darkModeToggle.addEventListener("click", function () {
-//     document.documentElement.classList.toggle("dark-mode");
+if (elModalButton) {
+  elModalButton.addEventListener('click', function () {
+    elModal.classList.remove('modal-open');
+  })
+}
 
-//     if (document.documentElement.classList.contains("dark-mode")) {
-//       localStorage.setItem("theme", "dark");
-//     } else {
-//       localStorage.setItem("theme", "light");
-//     }
-//   });
-// });
+
+setTimeout(function () {
+  elModal.classList.add('modal-open')
+}, 5000);
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const theme = localStorage.getItem("theme", "dark");
+  const darkModeToggle = document.getElementById("chk");
+
+  if (theme === "dark") {
+    document.body.classList.add("dark-body");
+  } else {
+    document.body.classList.remove("dark-body");
+  }
+
+  darkModeToggle.addEventListener("click", function () {
+    document.body.classList.toggle("dark-body");
+
+    if (document.body.classList.contains("dark-body")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  });
+});

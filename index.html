@@ -19,14 +19,13 @@
       <a class="site-header__logo-link logo-link" href="#">
         <h1 class="logo-link__title">S/R</h1>
       </a>
-      <div class="site-header__checbox checbox js-checbox">
+      <div class="site-header__checbox checbox js-checbox" id="chk">
         <img class="checbox_moon-img" src="images/moon.png" alt="oy rasmi" width="16" height="16">
         <span class="checbox__btn"></span>
         <img class="checbox_sun-img" src="images/sun.png" alt="quyosh rasmi" width="16" height="16">
       </div>
     </div>
   </header>
-
 
   <!-- MAIN CONTENT -->
   <main class="main-content">
@@ -36,7 +35,7 @@
         <h2 class="hero__title"><a class="hero__title-link" href="https://twitter.com/home">Sardorbek              Raximberdiyev</a> <br> Frontend dasturchi, MayoqHub 2.0 gurux o'quvchisi</h2>
       </div>
 
-      <div class="portfolios">
+      <div class="portfolios" >
         <ul class="portfolios__list">
           <li class="portfolios__item">
             <h2 class="portfolios__item-title">
@@ -152,6 +151,18 @@
       </ul>
     </div>
   </footer>
+
+  <section class="modal" id="site-modal-dialog">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h2 class="visually-hidden">Хотите быть в курсе свежих новостей?<br>Включите уведомления!</h2>
+        <p class="modal__text">Eslatib o'taman bu portfolio faqatgina dasturlashni o'rganishda tuzilgan saytlar jamlanmasi (Sayt <a class="modal__text-link" href="https://overreacted.io/">Dan Abramov</a> sayti asosida tuzilgan).</p>
+        <div class="modal__close-block">
+          <button class="modal__close-button button js-close-button">Tushunarli</button>
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="js/app.js"></script>
 </body>
 </html>

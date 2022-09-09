@@ -2,19 +2,19 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
 .portfolios__list {
   @include list;
 }
 
 .portfolios__item {
   &:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 46px;
   }
 }
 
 .portfolios__item-title {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .portfolios__item-link {
@@ -22,6 +22,7 @@
   text-decoration: none;
   font-family: Montserrat;
   font-weight: 900;
+  font-size: 36px;
   color: $dark-red-color;
 }
 
@@ -31,15 +32,49 @@
 
 .portfolios__item-text {
   margin: 0;
+  font-size: 24px;
 
   a {
     display: inline-block;
     text-decoration: none;
     font-weight: 900;
     color: $dark-red-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 
 .dark-body .portfolios__item-text a {
   color: $white-red-color;
+}
+
+@media only screen and (max-width: 576px) {
+  .portfolios {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .portfolios__item-link {
+    font-size: 30px;
+  }
+
+  .portfolios__item-text {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .portfolios__item-link {
+    font-size: 26px;
+  }
+
+  .portfolios__item-text {
+    font-size: 18px;
+  }
 }

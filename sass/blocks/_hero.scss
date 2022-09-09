@@ -5,8 +5,10 @@
 }
 
 .hero__img {
+  display: inline-flex;
   width: 84px;
   height: 84px;
+  border: 3px solid #ff7500;
   margin-right: 20px;
   border-radius: 50%;
   object-fit: cover;
@@ -24,6 +26,8 @@
   display: inline-block;
   color: $dark-red-color;
   text-decoration: underline;
+  font-family: Montserrat;
+  font-size: 28px;
 
   &:hover {
     text-decoration: none;
@@ -36,4 +40,47 @@
 
 .dark-body .hero__title-link {
   color: $white-red-color;
+}
+
+
+@media only screen and (max-width: 576px) {
+  .hero__img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .hero__title {
+    font-size: 20px;
+  }
+
+  .hero__title-link {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+
+  .hero__title {
+    font-size: 18px;
+  }
+
+  .hero__title-link {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .hero__img {
+    width: 84px;
+    height: 84px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
